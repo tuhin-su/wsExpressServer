@@ -1,0 +1,35 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Cab Rider api server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "nodemon",
+    "dev:client": "vite",
+    "build": "vite build",
+    "serve": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Innogate/Cab-Rider.git"
+  },
+  "author": "tuhin-su",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Innogate/Cab-Rider/issues"
+  },
+  "homepage": "https://github.com/Innogate/Cab-Rider#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mssql": "^11.0.1",
+    "redis": "^5.5.6",
+    "ws": "^8.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.10",
+    "vite": "^6.3.5"
+  }
+}
